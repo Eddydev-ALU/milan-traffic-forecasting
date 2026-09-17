@@ -1,0 +1,39 @@
+# --- Data -------------------------------------------------------------------
+# The raw dataset is ~20 GB, the processed matrix ~340 MB, and the grid
+# geojson is a separate large download. None of these belong in git;
+# README.md explains how to obtain and rebuild each.
+data/raw/
+data/raw_synth/
+data/processed/
+data/processed_synth/
+data/grid/
+*.npy
+*.parquet
+!data/.gitkeep
+
+# Downloaded dataset archives, wherever they were left.
+*.zip
+dataverse_files*
+test.zip
+
+# --- Generated results ------------------------------------------------------
+# Figures and tables ARE committed (small, and they back the report), but the
+# synthetic smoke-test output is not.
+results_synth/
+results/predictions/
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Editors / OS -----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

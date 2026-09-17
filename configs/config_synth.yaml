@@ -1,0 +1,87 @@
+# Fast end-to-end smoke-test configuration (synthetic data, 21 days, 60 squares).
+# Identical code path to configs/config.yaml -- only sizes and dates change.
+
+seed: 42
+
+paths:
+  raw_dir: data/raw_synth
+  processed_dir: data/processed_synth
+  results_dir: results_synth
+  figures_dir: results_synth/figures
+  tables_dir: results_synth/tables
+  predictions_dir: results_synth/predictions
+
+dataset:
+  activity: internet
+  n_squares: 60
+  intervals_per_day: 144
+  timezone: Europe/Rome
+  chunksize: 200000
+  missing_policy: interpolate
+
+splits:
+  train_start: "2013-11-01 00:00"
+  train_end:   "2013-11-14 23:50"
+  val_start:   "2013-11-15 00:00"
+  val_end:     "2013-11-17 23:50"
+  test_start:  "2013-11-18 00:00"
+  test_end:    "2013-11-21 23:50"
+
+eda:
+  extra_squares: [7, 11]
+  first_two_weeks_start: "2013-11-01 00:00"
+  first_two_weeks_end:   "2013-11-14 23:50"
+  acf_max_lag: 900
+
+forecasting:
+  horizon: 1
+  sequence_length: 48
+  use_time_features: true
+  scaler:
+    log1p: true
+    method: standard
+
+models:
+  baselines:
+    seasonal_period: 144
+  sarimax:
+    order: [2, 0, 1]
+    fourier:
+      - {period: 144, n_terms: 4}
+    log1p: true
+    trend: c
+    maxiter: 50
+  lstm:
+    hidden_size: 32
+    num_layers: 1
+    dropout: 0.1
+    lr: 0.003
+    batch_size: 128
+    max_epochs: 8
+    patience: 3
+    grad_clip: 1.0
+    loss: huber
+  tcn:
+    channels: [16, 16, 16]
+    kernel_size: 3
+    dropout: 0.1
+    lr: 0.003
+    batch_size: 128
+    max_epochs: 8
+    patience: 3
+    grad_clip: 1.0
+    loss: huber
+
+tuning:
+  lstm:
+    sequence_length: [24, 48]
+    hidden_size: [16, 32]
+  tcn:
+    sequence_length: [48]
+    kernel_size: [3]
+  sarimax:
+    order: [[1, 0, 0], [2, 0, 1]]
+
+timing:
+  n_repeats: 2
+  warmup: 0

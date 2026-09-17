@@ -1,0 +1,21 @@
+# Core numerics and I/O
+numpy>=1.26,<3
+pandas>=2.1
+scipy>=1.11
+pyyaml>=6.0
+
+# Statistical time-series models and tests (SARIMAX, ACF/PACF, ADF/KPSS, MSTL)
+statsmodels>=0.14
+
+# Plotting
+matplotlib>=3.8
+
+# Memory instrumentation
+psutil>=5.9
+
+# Deep learning. On a CPU-only machine install the much smaller CPU build:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+
+# Development
+pytest>=7.4

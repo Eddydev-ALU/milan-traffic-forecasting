@@ -1,0 +1,3 @@
+label,rss_before_mb,rss_after_mb,rss_peak_mb,rss_delta_mb,python_peak_mb,wall_seconds,df_memory_mb,rows,columns,strategy,unique_slots,checksum_match,reduction_vs_naive_pct
+naive_full_read,273.5,1153.4,1153.4,879.9,561.3,2.96,295.6,4842625,8,"read_csv(default dtypes, all 8 columns)",1439982,True,0.0
+optimised_chunked,1153.4,1195.4,1495.4,42.0,342.0,20.99,26.7,4842625,3,"usecols=3, narrow dtypes, chunksize=2,000,000, aggregate on arrival",1439982,True,91.0

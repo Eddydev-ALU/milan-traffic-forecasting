@@ -1,0 +1,5 @@
+series,ADF stat,ADF p,ADF: reject unit root (5%),KPSS stat,KPSS p,KPSS: reject stationarity (5%)
+raw,-19.0319,0.0,True,0.2367,0.1,False
+log1p,-22.7426,0.0,True,0.5708,0.0257,True
+seasonal diff (m=144),-11.833,0.0,True,0.0694,0.1,False
+first diff,-15.1604,0.0,True,0.0033,0.1,False

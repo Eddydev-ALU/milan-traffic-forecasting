@@ -1,0 +1,32 @@
+[
+  {
+    "square_id": 5161,
+    "lat": 45.46567285279864,
+    "lon": 9.193081455653491,
+    "maps_url": "https://www.google.com/maps?q=45.465673,9.193081"
+  },
+  {
+    "square_id": 5059,
+    "lat": 45.46356758834321,
+    "lon": 9.18706228325687,
+    "maps_url": "https://www.google.com/maps?q=45.463568,9.187062"
+  },
+  {
+    "square_id": 5259,
+    "lat": 45.46779812505402,
+    "lon": 9.18707627589126,
+    "maps_url": "https://www.google.com/maps?q=45.467798,9.187076"
+  },
+  {
+    "square_id": 4159,
+    "lat": 45.44453013415894,
+    "lon": 9.186999354868147,
+    "maps_url": "https://www.google.com/maps?q=45.444530,9.186999"
+  },
+  {
+    "square_id": 4556,
+    "lat": 45.453005639560715,
+    "lon": 9.178011067748134,
+    "maps_url": "https://www.google.com/maps?q=45.453006,9.178011"
+  }
+]
