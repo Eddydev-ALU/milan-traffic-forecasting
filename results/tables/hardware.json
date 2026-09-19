@@ -1,0 +1,11 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "processor": "arm",
+  "python": "3.14.6",
+  "logical_cores": 8,
+  "physical_cores": 8,
+  "total_ram_gb": 16.0,
+  "device": "cpu",
+  "gpu": "none",
+  "torch": "2.14.0"
+}

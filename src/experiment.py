@@ -134,9 +134,24 @@ def run_area(
         if arch == "tcn":
             arch_kwargs["channels"] = tuple(arch_kwargs["channels"])
 
-        def _make():
+        # Each architecture may have its own tuned window length. Rebuilding
+        # per model is cheap and safe: every target in the test split lies far
+        # past position max(L), so the set of forecasted timestamps -- and
+        # hence y_test / test_ts from the shared `context` above -- is
+        # identical regardless of which L built this model's windows.
+        model_L = int(params.get("sequence_length", L))
+        if model_L != L:
+            model_data, model_scaler = build_dataset(
+                series_raw, timestamps, split, L=model_L, horizon=horizon,
+                scaler=Scaler(log1p=fc["scaler"]["log1p"], method=fc["scaler"]["method"]),
+                use_time_features=fc["use_time_features"],
+            )
+        else:
+            model_data, model_scaler = data, scaler
+
+        def _make(_scaler=model_scaler):
             return NeuralForecaster(
-                arch=arch, scaler=scaler, lr=float(params["lr"]),
+                arch=arch, scaler=_scaler, lr=float(params["lr"]),
                 batch_size=int(params["batch_size"]), max_epochs=int(params["max_epochs"]),
                 patience=int(params["patience"]), grad_clip=float(params["grad_clip"]),
                 loss=params["loss"], seed=int(cfg["seed"]), **arch_kwargs,
@@ -147,19 +162,20 @@ def run_area(
         # mean +- std and state in the report which you used.
         holder = {}
 
-        def _fit():
+        def _fit(_train=model_data["train"], _val=model_data["val"]):
             model = _make()
-            model.fit(data["train"], data["val"])
+            model.fit(_train, _val)
             holder["model"] = model
             return model
 
         t_train = timeit(_fit, n_repeats=max(n_repeats, 1), warmup=0)
         model = holder["model"]
-        t_infer = timeit(lambda: model.predict(test), n_repeats=n_repeats, warmup=warmup)
+        t_infer = timeit(lambda: model.predict(model_data["test"]), n_repeats=n_repeats, warmup=warmup)
         histories[model.name] = model.history
         _record(model.name, np.asarray(t_infer["result"]), t_train, t_infer,
                 {"n_parameters": model.n_parameters(),
                  "receptive_field": model.receptive_field(),
+                 "sequence_length": model_L,
                  "best_epoch": model.history.best_epoch,
                  "epochs_run": model.history.epochs_run,
                  "stopped_early": model.history.stopped_early})
