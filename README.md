@@ -8,6 +8,8 @@ statistical model, a recurrent network and a convolutional network.
 mobile network traffic forecasting, and how does their performance vary across
 geographical areas with different traffic characteristics?
 
+**Video walkthrough:** https://youtu.be/2w-H4MhKb3I
+
 ---
 
 ## Headline results
@@ -223,7 +225,7 @@ definitions, hand-computed metric values, and Fourier-term periodicity.
 ## Report and video
 
 - Report: `report/` (submitted separately as PDF)
-- Video: link in the report's References section
+- Video walkthrough: https://youtu.be/2w-H4MhKb3I
 
 ## Data citation
 
