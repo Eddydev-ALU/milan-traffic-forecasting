@@ -1,57 +1,57 @@
 experiment,square_id,model,order,val_MAE,aic,bic,status,rationale,timestamp,sequence_length,hidden_size,num_layers,lr,train_seconds,epochs_run,best_epoch,stopped_early,n_parameters,kernel_size,dropout
-1,5161,SARIMAX,"(1, 1, 1)",101.41,-4543.2,-4411.0,ok,,2026-09-17 11:10:06,,,,,,,,,,,
-2,5161,SARIMAX,"(3, 0, 2)",102.08,-4648.2,-4496.2,ok,,2026-09-17 11:10:06,,,,,,,,,,,
-3,5161,SARIMAX,"(2, 0, 1)",102.52,-4513.8,-4375.0,ok,,2026-09-17 11:10:06,,,,,,,,,,,
-4,5161,SARIMAX,"(1, 0, 0)",118.63,-3813.4,-3687.9,ok,,2026-09-17 11:10:06,,,,,,,,,,,
-5,5161,LSTM,,109.55,,,,,2026-09-17 11:10:16,24.0,32,1,0.003,10.1,27.0,18.0,True,4519.0,,
-6,5161,LSTM,,109.64,,,,,2026-09-17 11:10:30,24.0,32,1,0.001,13.3,46.0,37.0,True,4519.0,,
-7,5161,LSTM,,119.74,,,,,2026-09-17 11:10:39,24.0,32,2,0.003,8.9,24.0,15.0,True,12967.0,,
-8,5161,LSTM,,118.01,,,,,2026-09-17 11:10:58,24.0,32,2,0.001,19.6,59.0,50.0,True,12967.0,,
-9,5161,LSTM,,107.71,,,,,2026-09-17 11:11:08,24.0,64,1,0.003,9.0,30.0,21.0,True,17223.0,,
-10,5161,LSTM,,109.1,,,,,2026-09-17 11:11:30,24.0,64,1,0.001,22.2,60.0,58.0,False,17223.0,,
-11,5161,LSTM,,116.5,,,,,2026-09-17 11:11:39,24.0,64,2,0.003,9.2,24.0,15.0,True,50503.0,,
-12,5161,LSTM,,117.29,,,,,2026-09-17 11:11:51,24.0,64,2,0.001,12.2,34.0,25.0,True,50503.0,,
-13,5161,LSTM,,103.27,,,,,2026-09-17 11:12:05,24.0,128,1,0.003,13.1,35.0,26.0,True,67207.0,,
-14,5161,LSTM,,104.92,,,,,2026-09-17 11:12:17,24.0,128,1,0.001,12.9,35.0,26.0,True,67207.0,,
-15,5161,LSTM,,107.49,,,,,2026-09-17 11:12:35,24.0,128,2,0.003,17.7,26.0,17.0,True,199303.0,,
-16,5161,LSTM,,105.81,,,,,2026-09-17 11:12:59,24.0,128,2,0.001,24.0,39.0,30.0,True,199303.0,,
-17,5161,LSTM,,107.89,,,,,2026-09-17 11:13:10,144.0,32,1,0.003,10.3,17.0,8.0,True,4519.0,,
-18,5161,LSTM,,112.05,,,,,2026-09-17 11:13:31,144.0,32,1,0.001,21.3,36.0,27.0,True,4519.0,,
-19,5161,LSTM,,117.75,,,,,2026-09-17 11:13:52,144.0,32,2,0.003,20.8,22.0,13.0,True,12967.0,,
-20,5161,LSTM,,118.02,,,,,2026-09-17 11:14:39,144.0,32,2,0.001,47.3,51.0,42.0,True,12967.0,,
-21,5161,LSTM,,107.01,,,,,2026-09-17 11:15:04,144.0,64,1,0.003,24.2,36.0,27.0,True,17223.0,,
-22,5161,LSTM,,111.7,,,,,2026-09-17 11:15:31,144.0,64,1,0.001,27.3,42.0,33.0,True,17223.0,,
-23,5161,LSTM,,117.29,,,,,2026-09-17 11:15:48,144.0,64,2,0.003,16.7,13.0,4.0,True,50503.0,,
-24,5161,LSTM,,115.09,,,,,2026-09-17 11:16:42,144.0,64,2,0.001,54.4,43.0,34.0,True,50503.0,,
-25,5161,LSTM,,103.35,,,,,2026-09-17 11:17:17,144.0,128,1,0.003,34.7,24.0,15.0,True,67207.0,,
-26,5161,LSTM,,104.99,,,,,2026-09-17 11:18:18,144.0,128,1,0.001,60.5,43.0,34.0,True,67207.0,,
-27,5161,LSTM,,107.48,,,,,2026-09-17 11:19:09,144.0,128,2,0.003,50.7,17.0,8.0,True,199303.0,,
-28,5161,LSTM,,106.31,,,,,2026-09-17 11:20:59,144.0,128,2,0.001,109.6,37.0,28.0,True,199303.0,,
-29,5161,LSTM,,107.73,,,,,2026-09-17 11:21:19,288.0,32,1,0.003,20.4,22.0,13.0,True,4519.0,,
-30,5161,LSTM,,108.85,,,,,2026-09-17 11:21:58,288.0,32,1,0.001,38.8,43.0,34.0,True,4519.0,,
-31,5161,LSTM,,119.15,,,,,2026-09-17 11:22:54,288.0,32,2,0.003,56.0,31.0,22.0,True,12967.0,,
-32,5161,LSTM,,121.29,,,,,2026-09-17 11:24:21,288.0,32,2,0.001,87.4,48.0,39.0,True,12967.0,,
-33,5161,LSTM,,106.79,,,,,2026-09-17 11:25:10,288.0,64,1,0.003,48.6,34.0,25.0,True,17223.0,,
-34,5161,LSTM,,112.23,,,,,2026-09-17 11:25:59,288.0,64,1,0.001,48.8,40.0,31.0,True,17223.0,,
-35,5161,LSTM,,113.07,,,,,2026-09-17 11:27:31,288.0,64,2,0.003,91.7,38.0,29.0,True,50503.0,,
-36,5161,LSTM,,116.25,,,,,2026-09-17 11:29:02,288.0,64,2,0.001,90.8,38.0,29.0,True,50503.0,,
-37,5161,LSTM,,105.4,,,,,2026-09-17 11:29:38,288.0,128,1,0.003,35.5,15.0,6.0,True,67207.0,,
-38,5161,LSTM,,104.76,,,,,2026-09-17 11:31:33,288.0,128,1,0.001,115.4,46.0,37.0,True,67207.0,,
-39,5161,LSTM,,104.63,,,,,2026-09-17 11:35:22,288.0,128,2,0.003,228.0,38.0,29.0,True,199303.0,,
-40,5161,LSTM,,106.7,,,,,2026-09-17 11:40:38,288.0,128,2,0.001,316.1,52.0,43.0,True,199303.0,,
-41,5161,TCN,,102.16,,,,,2026-09-17 11:41:11,144.0,,,0.003,32.5,29.0,20.0,True,21959.0,3,0.1
-42,5161,TCN,,103.21,,,,,2026-09-17 11:41:35,144.0,,,0.001,23.4,18.0,9.0,True,21959.0,3,0.1
-43,5161,TCN,,100.75,,,,,2026-09-17 11:42:05,144.0,,,0.003,30.6,29.0,20.0,True,21959.0,3,0.2
-44,5161,TCN,,108.72,,,,,2026-09-17 11:42:28,144.0,,,0.001,22.4,21.0,12.0,True,21959.0,3,0.2
-45,5161,TCN,,97.75,,,,,2026-09-17 11:43:09,144.0,,,0.003,41.2,32.0,23.0,True,36359.0,5,0.1
-46,5161,TCN,,104.62,,,,,2026-09-17 11:43:36,144.0,,,0.001,27.1,19.0,10.0,True,36359.0,5,0.1
-47,5161,TCN,,101.24,,,,,2026-09-17 11:43:54,144.0,,,0.003,17.8,15.0,6.0,True,36359.0,5,0.2
-48,5161,TCN,,105.57,,,,,2026-09-17 11:44:28,144.0,,,0.001,33.3,29.0,20.0,True,36359.0,5,0.2
-49,5161,TCN,,105.81,,,,,2026-09-17 11:45:06,288.0,,,0.003,37.8,21.0,12.0,True,21959.0,3,0.1
-50,5161,TCN,,106.51,,,,,2026-09-17 11:45:32,288.0,,,0.001,26.4,15.0,6.0,True,21959.0,3,0.1
-51,5161,TCN,,113.63,,,,,2026-09-17 11:45:51,288.0,,,0.003,18.3,10.0,1.0,True,21959.0,3,0.2
-52,5161,TCN,,105.9,,,,,2026-09-17 11:46:31,288.0,,,0.001,40.5,20.0,11.0,True,21959.0,3,0.2
-53,5161,TCN,,98.15,,,,,2026-09-17 11:47:24,288.0,,,0.003,52.6,24.0,15.0,True,36359.0,5,0.1
-54,5161,TCN,,101.67,,,,,2026-09-17 11:48:16,288.0,,,0.001,51.8,25.0,16.0,True,36359.0,5,0.1
-55,5161,TCN,,101.22,,,,,2026-09-17 11:49:03,288.0,,,0.003,47.2,24.0,15.0,True,36359.0,5,0.2
-56,5161,TCN,,105.76,,,,,2026-09-17 11:50:02,288.0,,,0.001,58.4,30.0,21.0,True,36359.0,5,0.2
+1,5161,SARIMAX,"(1, 1, 1)",101.41,-4543.2,-4411.0,ok,"Box-Jenkins starting point with d=1, chosen because the stationarity table gives first differencing the most decisive KPSS pass (0.0033 vs 0.5708 for log1p). Best validation MAE of the four orders (101.41) and the order written back to config.yaml.",2026-09-17 11:10:06,,,,,,,,,,,
+2,5161,SARIMAX,"(3, 0, 2)",102.08,-4648.2,-4496.2,ok,"Richest ARMA on undifferenced data, testing whether the Fourier terms absorb the trend so differencing becomes unnecessary. Wins on both AIC (-4648.2) and BIC (-4496.2) yet loses on validation MAE - an in-sample/out-of-sample disagreement that justifies selecting on validation error rather than information criteria.",2026-09-17 11:10:06,,,,,,,,,,,
+3,5161,SARIMAX,"(2, 0, 1)",102.52,-4513.8,-4375.0,ok,"Mid-complexity control between the (1,0,0) floor and the (3,0,2) ceiling. Confirms the information-criterion gain from extra ARMA terms is monotone while the validation gain is not, reinforcing the choice in experiment 1.",2026-09-17 11:10:06,,,,,,,,,,,
+4,5161,SARIMAX,"(1, 0, 0)",118.63,-3813.4,-3687.9,ok,"Deliberate floor: pure AR(1), no MA term, no differencing. 17% worse validation MAE and by far the worst AIC (-3813.4), confirming the residual structure left by the Fourier regressors needs a moving-average component rather than autoregression alone.",2026-09-17 11:10:06,,,,,,,,,,,
+5,5161,LSTM,,109.55,,,ok,"Smallest configuration in the grid and the reference the rest must beat. L=24 (4 h) is motivated by the ACF, which falls below 0.5 by lag 23, so four hours already spans the strongly correlated region.",2026-09-17 11:10:16,24.0,32,1,0.003,10.1,27.0,18.0,True,4519.0,,
+6,5161,LSTM,,109.64,,,ok,"Same capacity at the lower learning rate. Reaches an equivalent MAE but needs 46 epochs against 27, so 0.003 is kept as the default: equal accuracy at roughly half the training cost.",2026-09-17 11:10:30,24.0,32,1,0.001,13.3,46.0,37.0,True,4519.0,,
+7,5161,LSTM,,119.74,,,ok,First depth test. Two layers at h=32 costs 10 MAE points; with only five weeks of training data the extra layer overfits rather than adding useful nonlinearity.,2026-09-17 11:10:39,24.0,32,2,0.003,8.9,24.0,15.0,True,12967.0,,
+8,5161,LSTM,,118.01,,,ok,"Depth retested at the lower learning rate, to rule out 0.003 destabilising the deeper network. Still ~8 points worse than one layer, so depth itself is the problem, not optimisation.",2026-09-17 11:10:58,24.0,32,2,0.001,19.6,59.0,50.0,True,12967.0,,
+9,5161,LSTM,,107.71,,,ok,"Width doubled at the winning depth. Improves on h=32 (107.71 vs 109.55), indicating capacity - not history length - is the binding constraint at this stage.",2026-09-17 11:11:08,24.0,64,1,0.003,9.0,30.0,21.0,True,17223.0,,
+10,5161,LSTM,,109.1,,,ok,"Lower learning rate at h=64. The only run in the entire sweep that never triggers early stopping (60/60 epochs, best at 58), i.e. still undertrained at this budget - further evidence for the higher learning rate.",2026-09-17 11:11:30,24.0,64,1,0.001,22.2,60.0,58.0,False,17223.0,,
+11,5161,LSTM,,116.5,,,ok,"Depth re-checked at the larger width, in case two layers only pay off with enough units per layer. It does not: 116.50 against 107.71 for the one-layer twin.",2026-09-17 11:11:39,24.0,64,2,0.003,9.2,24.0,15.0,True,50503.0,,
+12,5161,LSTM,,117.29,,,ok,Final depth probe at h=64. Roughly 9 points worse than one layer again; the two-layer branch is treated as a confirmed dead end from here.,2026-09-17 11:11:51,24.0,64,2,0.001,12.2,34.0,25.0,True,50503.0,,
+13,5161,LSTM,,103.27,,,ok,"Widest single-layer configuration at the preferred learning rate. Best LSTM result of the sweep (103.27) in 13.1 s, and the setting written back to config.yaml.",2026-09-17 11:12:05,24.0,128,1,0.003,13.1,35.0,26.0,True,67207.0,,
+14,5161,LSTM,,104.92,,,ok,"Lower learning rate at the winning width. 1.6 points worse over the same epoch count, confirming the learning-rate choice at the configuration that matters most.",2026-09-17 11:12:17,24.0,128,1,0.001,12.9,35.0,26.0,True,67207.0,,
+15,5161,LSTM,,107.49,,,ok,Depth at maximum width - the most favourable possible case for two layers. Still 4 points worse than the one-layer equivalent while tripling parameters to 199k.,2026-09-17 11:12:35,24.0,128,2,0.003,17.7,26.0,17.0,True,199303.0,,
+16,5161,LSTM,,105.81,,,ok,"Closes the L=24 block. Every two-layer variant lost to its one-layer twin across all three widths, so the architecture is fixed at a single layer for the remaining blocks.",2026-09-17 11:12:59,24.0,128,2,0.001,24.0,39.0,30.0,True,199303.0,,
+17,5161,LSTM,,107.89,,,ok,Window extended to a full day so the network can see the lag-144 daily cycle directly rather than through calendar features. Tested first at minimum capacity to isolate the window effect from the width effect.,2026-09-17 11:13:10,144.0,32,1,0.003,10.3,17.0,8.0,True,4519.0,,
+18,5161,LSTM,,112.05,,,ok,Lower learning rate at the extended window. 4 points worse and twice the wall time; the learning-rate conclusion from the L=24 block transfers unchanged.,2026-09-17 11:13:31,144.0,32,1,0.001,21.3,36.0,27.0,True,4519.0,,
+19,5161,LSTM,,117.75,,,ok,"Depth check repeated at the daily window, in case longer sequences are what two layers needed to justify themselves. They do not.",2026-09-17 11:13:52,144.0,32,2,0.003,20.8,22.0,13.0,True,12967.0,,
+20,5161,LSTM,,118.02,,,ok,Second depth probe at L=144. 47.3 s for the worst result in this block; depth remains unproductive regardless of window length.,2026-09-17 11:14:39,144.0,32,2,0.001,47.3,51.0,42.0,True,12967.0,,
+21,5161,LSTM,,107.01,,,ok,Mid-width at the daily window. Essentially matches its L=24 counterpart (107.01 vs 107.71) for 2.7x the training time - the first clear sign the longer window is not earning its cost.,2026-09-17 11:15:04,144.0,64,1,0.003,24.2,36.0,27.0,True,17223.0,,
+22,5161,LSTM,,111.7,,,ok,"Lower learning rate at mid-width. Consistent with every other lr comparison in the sweep, so no further lr exploration is warranted.",2026-09-17 11:15:31,144.0,64,1,0.001,27.3,42.0,33.0,True,17223.0,,
+23,5161,LSTM,,117.29,,,ok,"Depth at mid-width, daily window. Stops after only 13 epochs with best_epoch=4, a diverging run that illustrates why the deeper variants were abandoned.",2026-09-17 11:15:48,144.0,64,2,0.003,16.7,13.0,4.0,True,50503.0,,
+24,5161,LSTM,,115.09,,,ok,"Lower learning rate stabilises the deep variant (115.09 vs 117.29) but at 54.4 s, and still far behind any one-layer result.",2026-09-17 11:16:42,144.0,64,2,0.001,54.4,43.0,34.0,True,50503.0,,
+25,5161,LSTM,,103.35,,,ok,"The key window comparison: the experiment 13 winner re-run with six times the history. 103.35 against 103.27 is a statistical tie for 2.6x the training time, showing the daily cycle is already fully supplied by the sin/cos calendar features.",2026-09-17 11:17:17,144.0,128,1,0.003,34.7,24.0,15.0,True,67207.0,,
+26,5161,LSTM,,104.99,,,ok,Lower learning rate at the best width and daily window. 60.5 s for a worse result; reinforces experiment 25's conclusion that the longer window buys nothing.,2026-09-17 11:18:18,144.0,128,1,0.001,60.5,43.0,34.0,True,67207.0,,
+27,5161,LSTM,,107.48,,,ok,"Depth at maximum width and daily window. 50.7 s, 199k parameters, 107.48 MAE - worse than the 13.1 s configuration in experiment 13.",2026-09-17 11:19:09,144.0,128,2,0.003,50.7,17.0,8.0,True,199303.0,,
+28,5161,LSTM,,106.31,,,ok,"Closes the L=144 block. No configuration here beats its L=24 equivalent, so extending the window to a full day is rejected on cost-benefit grounds.",2026-09-17 11:20:59,144.0,128,2,0.001,109.6,37.0,28.0,True,199303.0,,
+29,5161,LSTM,,107.73,,,ok,"Window doubled again to two days, the last entry in the window grid, testing whether weekly structure becomes visible with more history. Started at minimum capacity for the same isolation reason as experiment 17.",2026-09-17 11:21:19,288.0,32,1,0.003,20.4,22.0,13.0,True,4519.0,,
+30,5161,LSTM,,108.85,,,ok,Lower learning rate at two days of history. No reversal of the pattern established in the previous two blocks.,2026-09-17 11:21:58,288.0,32,1,0.001,38.8,43.0,34.0,True,4519.0,,
+31,5161,LSTM,,119.15,,,ok,Depth at the longest window - the configuration with the most opportunity for a deep recurrent model to help. 119.15 MAE in 56.0 s is among the worst results in the sweep.,2026-09-17 11:22:54,288.0,32,2,0.003,56.0,31.0,22.0,True,12967.0,,
+32,5161,LSTM,,121.29,,,ok,Worst LSTM result of the entire grid (121.29) at 87.4 s. Deep plus long plus slow is comprehensively the wrong direction.,2026-09-17 11:24:21,288.0,32,2,0.001,87.4,48.0,39.0,True,12967.0,,
+33,5161,LSTM,,106.79,,,ok,Mid-width at two days. 106.79 is the best of the L=288 small/mid-width runs but costs 48.6 s against 9.0 s for the comparable L=24 configuration.,2026-09-17 11:25:10,288.0,64,1,0.003,48.6,34.0,25.0,True,17223.0,,
+34,5161,LSTM,,112.23,,,ok,"Lower learning rate at mid-width, two days. 5.4 points worse than experiment 33 at identical cost.",2026-09-17 11:25:59,288.0,64,1,0.001,48.8,40.0,31.0,True,17223.0,,
+35,5161,LSTM,,113.07,,,ok,"Depth at mid-width, longest window. 91.7 s of training for 113.07 MAE.",2026-09-17 11:27:31,288.0,64,2,0.003,91.7,38.0,29.0,True,50503.0,,
+36,5161,LSTM,,116.25,,,ok,Second-slowest mid-width run in the block. Confirms the depth finding for a third consecutive window length.,2026-09-17 11:29:02,288.0,64,2,0.001,90.8,38.0,29.0,True,50503.0,,
+37,5161,LSTM,,105.4,,,ok,"Maximum width at two days of history. Stops early at 15 epochs (best at 6), suggesting the longer sequences make the optimisation noisier rather than more informative.",2026-09-17 11:29:38,288.0,128,1,0.003,35.5,15.0,6.0,True,67207.0,,
+38,5161,LSTM,,104.76,,,ok,"Best L=288 single-layer result (104.76), and still worse than the L=24 winner - the final piece of evidence that history beyond a few hours adds nothing once calendar features are present.",2026-09-17 11:31:33,288.0,128,1,0.001,115.4,46.0,37.0,True,67207.0,,
+39,5161,LSTM,,104.63,,,ok,"Largest model in the grid: 199k parameters, 228.0 s, 104.63 MAE. Seventeen times the training cost of experiment 13 for a worse validation score - the clearest cost/benefit data point in the LSTM sweep.",2026-09-17 11:35:22,288.0,128,2,0.003,228.0,38.0,29.0,True,199303.0,,
+40,5161,LSTM,,106.7,,,ok,"Most expensive run in the entire study (316.1 s). Closes the LSTM grid: the winner is the short-window, wide, shallow configuration from experiment 13.",2026-09-17 11:40:38,288.0,128,2,0.001,316.1,52.0,43.0,True,199303.0,,
+41,5161,TCN,,102.16,,,ok,"TCN sweep opens at a full day of history, the natural window for dilated convolutions since they can span it in parallel. With k=3 over four dilated layers the receptive field is 1+2(k-1)(2^4-1) = 61 steps (~10 h), so the model cannot actually use the whole window it is given.",2026-09-17 11:41:11,144.0,,,0.003,32.5,29.0,20.0,True,21959.0,3,0.1
+42,5161,TCN,,103.21,,,ok,Lower learning rate at the narrow kernel. 1 point worse and stops at 18 epochs; 0.003 carried forward as for the LSTM.,2026-09-17 11:41:35,144.0,,,0.001,23.4,18.0,9.0,True,21959.0,3,0.1
+43,5161,TCN,,100.75,,,ok,"Dropout raised to 0.2 at the narrow kernel. Best of the k=3 runs (100.75), consistent with a small model that benefits from mild regularisation.",2026-09-17 11:42:05,144.0,,,0.003,30.6,29.0,20.0,True,21959.0,3,0.2
+44,5161,TCN,,108.72,,,ok,"Higher dropout combined with the lower learning rate under-fits badly (108.72), showing the two regularising choices should not be stacked.",2026-09-17 11:42:28,144.0,,,0.001,22.4,21.0,12.0,True,21959.0,3,0.2
+45,5161,TCN,,97.75,,,ok,"Kernel widened to 5, lifting the receptive field to 1+2(4)(15) = 121 steps (~20 h) so it finally covers most of the daily cycle. Best TCN result and the best validation MAE of any model in the study (97.75); written back to config.yaml.",2026-09-17 11:43:09,144.0,,,0.003,41.2,32.0,23.0,True,36359.0,5,0.1
+46,5161,TCN,,104.62,,,ok,"Lower learning rate at the winning kernel. 6.9 points worse, the largest lr penalty anywhere in the TCN grid.",2026-09-17 11:43:36,144.0,,,0.001,27.1,19.0,10.0,True,36359.0,5,0.1
+47,5161,TCN,,101.24,,,ok,"Higher dropout at the wide kernel. Unlike the k=3 case, extra regularisation now hurts (101.24 vs 97.75): the larger receptive field already constrains the model enough.",2026-09-17 11:43:54,144.0,,,0.003,17.8,15.0,6.0,True,36359.0,5,0.2
+48,5161,TCN,,105.57,,,ok,"Completes the L=144 kernel/dropout corner. The k=5, dropout=0.1 combination is confirmed as the block winner.",2026-09-17 11:44:28,144.0,,,0.001,33.3,29.0,20.0,True,36359.0,5,0.2
+49,5161,TCN,,105.81,,,ok,"Window doubled to two days at the narrow kernel. 105.81, worse than the same kernel at L=144 - additional input the 61-step receptive field can never reach.",2026-09-17 11:45:06,288.0,,,0.003,37.8,21.0,12.0,True,21959.0,3,0.1
+50,5161,TCN,,106.51,,,ok,"Lower learning rate at two days, narrow kernel. Stops at 15 epochs with best_epoch=6, an early-plateau pattern typical of this block.",2026-09-17 11:45:32,288.0,,,0.001,26.4,15.0,6.0,True,21959.0,3,0.1
+51,5161,TCN,,113.63,,,ok,"Worst TCN result of the sweep (113.63), stopping after 10 epochs with best_epoch=1. A narrow receptive field, a long window and heavy dropout combine into a model that barely trains.",2026-09-17 11:45:51,288.0,,,0.003,18.3,10.0,1.0,True,21959.0,3,0.2
+52,5161,TCN,,105.9,,,ok,"Lower learning rate rescues the previous configuration (105.90 vs 113.63), but the block remains uncompetitive.",2026-09-17 11:46:31,288.0,,,0.001,40.5,20.0,11.0,True,21959.0,3,0.2
+53,5161,TCN,,98.15,,,ok,"Best kernel at two days of history. 98.15 is no better than the 97.75 obtained at L=144, which is the expected result: a 121-step receptive field cannot see past ~20 h no matter how much input is supplied, so the extra window is pure wasted computation.",2026-09-17 11:47:24,288.0,,,0.003,52.6,24.0,15.0,True,36359.0,5,0.1
+54,5161,TCN,,101.67,,,ok,Lower learning rate at the best L=288 configuration. Confirms the lr conclusion at the longest window.,2026-09-17 11:48:16,288.0,,,0.001,51.8,25.0,16.0,True,36359.0,5,0.1
+55,5161,TCN,,101.22,,,ok,Higher dropout at two days. Mirrors experiment 47 - regularisation does not help the wide-kernel model at either window length.,2026-09-17 11:49:03,288.0,,,0.003,47.2,24.0,15.0,True,36359.0,5,0.2
+56,5161,TCN,,105.76,,,ok,"Closes the grid. Overall outcome: TCN k=5 at L=144 (97.75) beats the best LSTM (103.27) and the best SARIMAX (101.41) on the validation week, a ranking that partly holds on the test week where TCN wins two of the three areas.",2026-09-17 11:50:02,288.0,,,0.001,58.4,30.0,21.0,True,36359.0,5,0.2

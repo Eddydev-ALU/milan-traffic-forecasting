@@ -1,4 +1,4 @@
-"""Exploratory and time-series analysis (Tasks 2 of the brief).
+"""Exploratory and time-series analysis.
 
 Every function returns both the figure/table *and* the numbers behind it, so
 the report can quote statistics rather than pointing vaguely at a plot.

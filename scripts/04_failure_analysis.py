@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Stage 4 - failure analysis (rubric: 'Failure Analysis & Critical Reflection').
+"""Stage 4 - failure analysis.
 
 Reloads the saved predictions and answers three questions with numbers rather
 than adjectives:
@@ -99,8 +99,7 @@ def main() -> None:
     if profiles:
         print(f"\n-> {plots.plot_error_breakdown(profiles, target, figures)}")
 
-    # Zoomed overlay on the single worst hour across models -- the concrete
-    # "period for which one or more models perform poorly" the brief requires.
+    # Zoomed overlay on the single worst hour across models.
     worst_hour = (pd.concat(profiles.values())
                   .groupby("timestamp")["abs_error"].mean().idxmax())
     lo = (pd.Timestamp(worst_hour) - pd.Timedelta(hours=3)).strftime("%Y-%m-%d %H:%M")

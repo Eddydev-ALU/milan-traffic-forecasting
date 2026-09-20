@@ -15,9 +15,8 @@ non-seasonal ARMA for the remaining short-range dependence::
 
 ``F_t`` holds sin/cos pairs at the daily and weekly fundamental frequencies and
 their harmonics. This gives smooth multi-seasonal structure with a handful of
-parameters and a tiny state vector. Flagging this design decision in the report
-is worth doing -- it is exactly the kind of engineering judgement the rubric
-rewards.
+parameters and a tiny state vector, which is why this is the standard remedy
+for multi-seasonal series with long periods.
 """
 
 from __future__ import annotations

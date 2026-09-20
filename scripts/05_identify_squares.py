@@ -3,10 +3,10 @@
 
 The grid geojson has one polygon per square but no place names, so this
 script computes each requested square's centroid (lat/lon) and prints a
-clickable map link. Open the link and note what's there (a stadium, a
-station, a park, a business district) -- that observation is what turns a
-generic "Square 5161" caption into the real-world explanation the EDA rubric
-rewards.
+clickable map link. Opening the link shows what is actually there (a
+stadium, a station, a park, a business district), which is what turns a
+generic "Square 5161" label into a real-world explanation of the traffic
+pattern.
 
 Usage
 -----

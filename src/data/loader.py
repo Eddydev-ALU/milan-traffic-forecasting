@@ -11,8 +11,8 @@ slot is split into one row per interacting ``country_code``. That is the single
 biggest source of bloat: a day holds ~300k logical slots (10,000 squares x 144
 intervals) but several million physical rows.
 
-Optimisation strategy (Section 1 of the brief)
-----------------------------------------------
+Optimisation strategy
+---------------------
 1. Stream one day at a time -- the 62 files are never co-resident.
 2. Read only the three columns we need (``usecols``), with explicit narrow
    dtypes, so the parser never materialises the country column or float64

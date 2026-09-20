@@ -1,10 +1,8 @@
 """Naive baselines.
 
-These are *not* among the three models the brief asks for -- they are the
-reference every serious forecasting paper reports. For one-step-ahead
-prediction on smooth 10-minute data, persistence is brutally strong. If a
-neural network cannot beat it, that is a genuine finding and belongs in the
-report rather than being quietly omitted.
+These are reference points rather than candidate models. For one-step-ahead
+prediction on smooth 10-minute data, persistence is very strong; if a neural
+network cannot beat it, that is a genuine finding and is reported as one.
 """
 
 from __future__ import annotations

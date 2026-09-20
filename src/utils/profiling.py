@@ -1,9 +1,9 @@
 """Memory and timing instrumentation.
 
-Task 1 of the brief asks for *evidence* of memory usage before and after
-optimisation, and Task 4-IV asks for exact training/inference timings together
-with the method used to obtain them. Both are produced here so that every
-number quoted in the report is reproducible by re-running one function.
+Produces evidence of memory usage before and after optimisation, and exact
+training/inference timings together with the method used to obtain them, so
+that every number quoted in the report is reproducible by re-running one
+function.
 """
 
 from __future__ import annotations
@@ -133,7 +133,7 @@ def timeit(fn: Callable[[], Any], n_repeats: int = 3, warmup: int = 1) -> dict:
 
 
 def hardware_info() -> dict:
-    """Machine description to quote verbatim in the report (Task 4-IV)."""
+    """Machine description, recorded alongside every reported timing."""
     info = {
         "platform": platform.platform(),
         "processor": platform.processor() or platform.machine(),

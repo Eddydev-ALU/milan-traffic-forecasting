@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Stage 3 - tuning and the forecasting experiments (Tasks 3 and 4).
+"""Stage 3 - hyperparameter tuning and the forecasting experiments.
 
 Usage
 -----
@@ -10,10 +10,10 @@ Usage
 Outputs
 -------
     results/tables/experiment_log.csv        <- the iterative tuning table
-    results/tables/metrics_sq<ID>.csv        <- one table per area (Task 4-III)
+    results/tables/metrics_sq<ID>.csv        <- one table per area
     results/tables/metrics_all.csv
-    results/tables/timing.csv                <- Task 4-IV
-    results/figures/fig_pred_sq<ID>_<MODEL>.png   <- the 9 required plots
+    results/tables/timing.csv                <- train/infer timings
+    results/figures/fig_pred_sq<ID>_<MODEL>.png   <- per-model prediction plots
     results/figures/fig_overlay_sq<ID>.png
     results/predictions/*.npy
 """

@@ -33,7 +33,7 @@ splits:
   test_end:    "2013-12-22 23:50"   # inclusive -> 1008 steps, Mon..Sun
 
 eda:
-  # Squares required by the brief in addition to the three busiest ones.
+  # Two contrasting areas studied alongside the three busiest ones.
   extra_squares: [4159, 4556]
   first_two_weeks_start: "2013-11-01 00:00"
   first_two_weeks_end:   "2013-11-14 23:50"

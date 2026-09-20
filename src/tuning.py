@@ -1,10 +1,9 @@
 """Hyperparameter search with a persistent experiment log.
 
-The brief explicitly asks for an *iterative* process in which each experiment
-is documented with its parameters, its performance, and the reasoning behind
-the next adjustment. ``ExperimentLog`` writes one row per experiment to CSV so
-the table in the report is generated, not retyped -- and the ``rationale``
-column is where you record *why* the next configuration was chosen.
+Each experiment is documented with its parameters, its performance and the
+reasoning behind it. ``ExperimentLog`` writes one row per experiment to CSV so
+the table in the report is generated rather than retyped, and the ``rationale``
+column records what that configuration was testing and what it showed.
 """
 
 from __future__ import annotations
@@ -126,7 +125,7 @@ def tune_neural(
             epochs_run=model.history.epochs_run, best_epoch=model.history.best_epoch,
             stopped_early=model.history.stopped_early,
             n_parameters=model.n_parameters(),
-            rationale="",  # fill in by hand: why this configuration was tried next
+            rationale="",  # annotated after the sweep, in the log itself
         )
         if verbose:
             flag = "  <-- best so far" if improved else ""
